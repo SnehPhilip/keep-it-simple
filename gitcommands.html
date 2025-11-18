@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>git Commands</title>
+
+</head>
+<body><center><br><br>
+_____________________________
+
+<br>CONFIGURATION COMMANDS<br>
+_____________________________<br><br>
+
+Set user name<br>
+
+Code<br>
+
+<b>git config --global user.name "Your Name"</b><br><br><br><br>
+
+Set user email<br>
+
+
+Code<br>
+    <b>git config --global user.email "your_email@example.com"</b><br><br><br>
+__________________________________<br>
+CREATING AND CLONING REPOSITORIES: <br>
+__________________________________<br><br>
+Initialize a new local repository.<br>
+Code
+
+<br>   <b> git init </b><br>
+
+<br><br>[OR]
+
+<br><br>Clone an existing repository.
+<br>Code
+
+<br>   <b> git clone <repository_url></b><br>
+<br>___________________________
+<br>MAKING AND STAGING CHANGES:
+<br>[Navigate to your Git repository in the terminal: Code cd /path/to/your/repository]
+<br>___________________________
+
+<br><br>Check repository status.<br>Code
+
+<br>   <b> git status</b><br><br>
+
+<br>Add a file to the staging area: 
+<br>Code
+
+<br>  <b>  git add file_name</b><br><br>
+
+<br>Add all changes to the staging area: 
+<br>Code
+
+<br>  <b>  git add </b>.<br><br>
+<br>Commit staged changes with a message.
+<br>Code
+
+<br>   <b> git commit -m "Commit message"</b><br><br>
+
+<br>Commit all tracked changes directly (skipping staging area): 
+<br>Code
+
+<br>   <b> git commit -am "Commit message"</b><br><br>
+
+<br>______________________________________________________________________________________________________________________
+<br>Why use git status ?
+<br>It gives
+<br>1. the Current Branch:
+<br>(The name of the branch you are currently on.)
+<br>2. the Changes to be committed:
+<br>(Files that have been staged using git add and are ready for the next commit.)
+<br>3. the Changes not staged for commit:
+<br>(Modified files in your working directory that have not yet been added to the staging area.
+<br>Untracked files:)
+<br>4. the New files in your working directory that Git is not currently tracking. These files will not be included in commits unless <br>you explicitly add them using git add.
+<br>5. the Information about ongoing operations:
+<br>If there's an ongoing rebase or merge, git status will provide details about its state.]
+<br>______________________________________________
+<br>WORKING WITH BRANCHES:<br>_________________________________________
+<br><br>list all local branches.
+<br>Code:
+
+<br><b> git branch </b><br><br>
+
+<br>1. Create a new branch without switching to it:
+<br>Code:
+
+<br><b> git branch new_branch_name</b><br> <br>
+
+
+<br>2. Create a new branch and switch to it immediately: 
+
+<br>Code:
+
+<br>   <b> git checkout -b new_branch_name</b><br><br>
+
+
+<br>3. Switch to an existing branch.
+<br>Code:
+
+<br>   <b> git checkout branch_name</b><br> <br>
+
+<br>4. Merge a branch into the current branch: 
+<br>Code:
+
+<br>    <b>git merge branch_to_merge</b><br>
+<br><br>_____________________
+<br>DELETING LOCAL BRANCH
+<br>_______________________
+<br>Code
+
+:<br>     <b>git branch -d branch_name</b><br> <br>
+<BR>
+______________________________________
+<br>SYNCHRONIZING WITH REMOTE REPOSITORIES:
+<br>_______________________________________
+<br>Fetch changes from a remote repository.
+<br>Code
+
+:<br>     <b>git fetch remote_name</b><br> <br>
+
+<br>Pull changes (fetch and merge) from a remote repository: 
+<br>Code
+
+:<br>   <b>  git pull remote_name branch_name</b><br><br>
+
+<br>Push local commits to a remote repository: 
+<br>Code
+
+:<br> <b>   git push remote_name branch_name </b><br> <br>
+
+<br>[NEVER PUSH CHANGES DIRECTLY TO REMOTE MASTER BRANCH, INSTEAD RAISE A PULL REQUEST IN GITHUB FOR REVIEW] 
+
+<br></center></body>
